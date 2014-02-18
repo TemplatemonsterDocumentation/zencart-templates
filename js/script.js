@@ -22,6 +22,10 @@
       }
     });
 
+	// current year
+      var date = new Date();
+      $("#date").html(date.getFullYear());
+
     // scroll body to 0px on click
     $('#back-top a').click(function () {
       $('body,html').animate({
