@@ -181,9 +181,9 @@ header h1 a {
 }
 header .brand {
   text-indent: -1000px;
-  background: url(/help/wp-content/logo.png) no-repeat 0 0;
-  width: 3754px;
-  height: 72px;
+  background: url(../img/logo-monster.jpg) no-repeat 0 0;
+  width: 274px;
+  height: 48px;
   display: block;
 }
 header h1 {
