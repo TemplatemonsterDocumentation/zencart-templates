@@ -137,10 +137,10 @@
                            </ul> 
                        </dd>
                      </dl> 
-                  </li> 
+                  </li>
                   <li class="nav-item item8">
                     <dl class="slide-down">
-                       <dt><a href="#addendum" class="icon-question-sign">Conclusion </a></dt>
+                       <dt><a href="#addendum" class="icon-question-sign">Addendum </a></dt>
                        <dd></dd>
                      </dl> 
                   </li> 
@@ -449,6 +449,29 @@
       <li><a href="http://www.zen-cart.com/content.php?2-tutorials-faq" target="_blank">Official Zen Cart FAQ</a></li>
     </ul>
   </div>
+  
+  <h2><i class="icon-question-sign"></i> Loading data from Google servers</h2>
+
+    <p>Some countries have issues connecting to Google servers. This can cause issues loading Google Fonts and Java Script libraries from Google CDN. To resolve these issues please do the following: </p>
+    
+    <h3>Can't load Google Fonts: </h3>
+    <ol>
+    <li>Open \includes\templates\themeXXX\common\html_header.php file</li>
+    <li>Locate the line: <br>
+    <pre>$doc->addStyleSheet('//fonts.googleapis.com/css?family=[---your_web_font_name_here---]');</pre></li>
+    <li>Replace it with the following: <br>
+    <pre>$doc->addStyleSheet('//fonts.useso.com/css?family=[---your_web_font_name_here---]');</pre></li>
+    </ol>
+    
+    <h3>Can't load jQuery</h3>
+    <ol>
+    <li>Locate the line:
+    <pre>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/[---your_jquery_version---]/jquery.min.js">&lt;/script></pre></li>
+    <li>Replace with the following:<br>
+    <pre>&lt;script src="//code.jquery.com/jquery-[---your_jquery_version---].min.js">&lt;/script></pre></li></li>
+    </ol>
+    
+    <p>You can also use local copy of jQuery library. </p>
 </section>
 
 </div>
