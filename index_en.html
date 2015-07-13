@@ -6,13 +6,19 @@
   <link rel="stylesheet" href="css/bootstrap.css" media="screen">
   <link rel="stylesheet" href="css/responsive.css" media="screen">
   <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/responsive-utilities.css" media="screen">
+  <link rel="stylesheet" href="css/font-awesome.css" media="screen">
+  <link rel="stylesheet" href="css/ie.css" media="screen">
   <link rel="stylesheet" href="css/flexslider.css"  media="screen">
   <link rel="stylesheet" href="css/prettify.css"  media="screen">
   <link rel="stylesheet" href="css/prettyPhoto.css"  media="screen">
   <link rel="canonical" href="http://www.templatemonster.com/help/quick-start-guide/zencart-templates/master/index_en.html"/> 
   <script src="js/jquery.js"></script>
   <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/jquery.nav.js"></script>
   <script src="js/jquery-migrate-1.1.0.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/prettify.js"></script>
   <script src="js/jquery.flexslider.js"></script>
   <script src="js/bootstrap-affix.js"></script>
@@ -20,7 +26,7 @@
   <script src="js/script.js"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"> 
     <!--[if lt IE 8]>
-  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg"border="0"alt=""/></a></div>  
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"alt=""/></a></div>
  	  <![endif]-->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -34,21 +40,9 @@
 <header class="header">
   <div class="container">
   <div class="row">
-  <article class="span4"><a class="brand" href="/help/" target="_blank"></a></article>
- <article class="span6">
- <h1><img alt="" src="img/zen_logo.png"> Zen Cart Documentation</h1>
+  <article class="span12">
+    <h1><img alt="" src="img/zen_logo.png"> Zen Cart Documentation</h1>
   </article> 
-  <article class="span2">
-    <div class="languages pull-right">
-      <!-- <span class="lang_label">Language: </span> --><div id="lang_icon"><b>En</b><i class="icon-angle-down"></i></div>
-      <ul id="lang_list">
-        <li class="active"><a href="index.html"><span>English </span><img src="img/flags/gb.png" height="14" width="22" alt="en"></a></li>
-        <!--<li><a href="index_es.html"><span>Español </span><img src="img/flags/es.png" height="14" width="22" alt="es"></a></li>
-        <li><a href="index_de.html"><span>Deutsch </span><img src="img/flags/de.png" height="14" width="22" alt="de"></a></li>
-        <li><a href="index_ru.html"><span>Русский </span><img src="img/flags/ru.png" height="14" width="22" alt="ru"></a></li>-->
-      </ul>
-    </div>
-  </article>   
   </div>    
   </div>
 </header>
@@ -62,7 +56,7 @@
       <div class="span3"> 
 
         <div id="nav_container">
-          <a href="javascript:;" id="affect_all">
+          <a href="javascript:" id="affect_all">
             <span class="expand">
               <i class="icon-angle-down"></i>
             </span>            
@@ -131,7 +125,11 @@
                        <dt><a href="#zc_addons" class="icon-cogs">Zen Cart Add-ons</a> <i class="icon-sample"></i></dt>
                          <dd>
                            <ul class="list">          
-                            <li><a href="#zc_social">Social Media Icons Module</a></li>
+                            <li><a href="#megamenu">Megamenu</a></li>                    
+                            <li><a href="#slider">Slider</a></li>                    
+                            <li><a href="#custom_block">Custom Block</a></li>                    
+                            <li><a href="#ajax_search">Ajax Search</a></li>                    
+                            <li><a href="#zc_social">Social Media Icons Module</a></li>                    
                             <li><a href="#footer_links">Footer Links in Columns Module</a></li>                    
                             <li><a href="#zc_extra_img">Extra Product Images</a></li>                    
                            </ul> 
@@ -186,11 +184,14 @@
         <ul>
           <li class="folder"><i class="icon-folder-close"></i> psd<small class="muted"> - template Adobe Photoshop source files (.psd)</small></li>
           <li class="folder"><i class="icon-folder-close"></i> images<small class="muted"> - product images, social services and key lightbox</small></li>
-          <li class="file"><i class="icon-file"></i> ZENCART_FULL.sql<small class="muted"> - contains sample banners, categories, products settings </small></li>
-          <li class="file"><i class="icon-file"></i> ZENCART_SHORT.sql<small class="muted"> - contacts only store and theme settings </small></li>
+          <li class="file"><i class="icon-file"></i> ZENCART_AJAX_SEARCH.sql<small class="muted"> - provides extended search settings </small></li>
+          <li class="file"><i class="icon-file"></i> ZENCART_CUSTOM_BLOCK.sql<small class="muted"> - sets the extra editable content blocks </small></li>
+          <li class="file"><i class="icon-file"></i> ZENCART_FULL.sql<small class="muted"> - contains store &amp; theme settings, sample banners, categories, products settings, megamenu, custom block, social icons on the product page, slider on homepage, etc.</small></li>
+          <li class="file"><i class="icon-file"></i> ZENCART_MEGAMENU.sql<small class="muted"> - sets the megamenu into your site </small></li>
+          <li class="file"><i class="icon-file"></i> ZENCART_SHORT.sql<small class="muted"> - contains only store and theme settings </small></li>
           <li class="file"><i class="icon-file"></i> ZENCART_SLIDER.sql<small class="muted"> - slider on homepage </small></li>
           <li class="file"><i class="icon-file"></i> ZENCART_SOCIAL.sql<small class="muted"> - set of social icons on the product page </small></li>
-
+          <li class="file"><i class="icon-file"></i> ZENCART_YOUTUBE.sql<small class="muted"> - display YouTube video on the product page </small></li>
         </ul>
       </li>
       <li class="file"><i class="icon-file"></i> fonts_info.txt<small class="muted"> - contains links where the template custom fonts can be downloaded</small></li>
@@ -210,7 +211,7 @@
     <ol>
       <li>First of all you need the right applications to extract the password protected sources_#########.zip archive. You can use WinZip 9+ (Windows) and Stuffit Expander 10+ (Mac).</li>
       <li>You may also need Adobe Photoshop application. It is used to edit .PSD source files and it necessary if you want to edit template design graphics and images.</li>
-      <li>To edit template source code files you need some code editor like Adobe Dreamweaver, Notepad++, Sublime Text etc.</li>
+      <li>To edit template source code files you need some code editor like Sublime Text, Adobe Dreamweaver, Notepad++ etc.</li>
       <li>To upload files to the hosting server you may need an FTP Manager like Total Commander, FileZilla, CuteFTP etc.</li>
     </ol>
   </div>
@@ -325,20 +326,24 @@
     <div id="zc_sample_data">
       <h3>How to install Zen Cart sample data </h3>
 	  <p>To make your template look like on the live demo you need to install the template sample data. Sample data contains the website settings, sample products, modules, menus, images etc. It is useful when you want to see the template functionality or the examples of the pages design and layout.</p>
-      <p>Zen Cart templates are provided with four SQL files that contains all website sample content(except the images) and sample website settings. The SQL files can be imported into your database using your database management tool (usually phpMyAdmin) or directly through Zen Cart admin panel:<b> Tools > Install SQL Patches</b></p>
+      <p>Zen Cart templates are provided with one main SQL file (ZENCART_FULL.sql) that contains all website sample content and sample website settings, and seven additional SQL files that can be installed on an existing store as your option. The SQL files can be imported into your database using your database management tool (usually phpMyAdmin) or directly through Zen Cart admin panel: <b>Tools > Install SQL Patches</b>.</p>
       <ul class="list_1">
-    	<li><b>ZENCART_FULL.sql</b> – contains sample banners, categories, products settings. Use it with clear Zen Cart installation.</li>
-        <li><b>ZENCART_SHORT.sql</b> – contacts only store and theme settings. Installing short dump won't replace your store goods.</li>
-        <li><b>ZENCART_SOCIAL.sql</b> - set of social icons on the product page </li>
-        <li><b>ZENCART_SLIDER.sql</b> - slider on homepage </li>
+        <li><b>ZENCART_FULL.sql</b> – contains store and theme settings, sample banners, categories, products settings, megamenu, custom block, social icons on the product page, slider on homepage. Use it with clear Zen Cart installation.</li>
+        <li><b>ZENCART_SHORT.sql</b> – contains only store and theme settings. Installing short dump won't replace your store goods.</li>
+        <li><b>ZENCART_AJAX_SEARCH.sql</b> – provides extended search settings. </li>
+        <li><b>ZENCART_CUSTOM_BLOCK.sql</b> – sets the extra editable content blocks. </li>
+        <li><b>ZENCART_MEGAMENU.sql</b> – sets the megamenu into your site. </li>
+        <li><b>ZENCART_SHORT.sql</b> – contains only store and theme settings. </li>
+        <li><b>ZENCART_SLIDER.sql</b> – slider on homepage. </li>
+        <li><b>ZENCART_SOCIAL.sql</b> – set of social icons on the product page. </li>
+        <li><b>ZENCART_YOUTUBE.sql</b> – display YouTube video on the product page. </li>
   	 </ul>
+     <div class="box-info alt"><span>NOTE: All the SQL files can be installed in any order, except ZENCART_FULL that contains all the other SQL files and imported into the clear Zen Cart </span></div>
      <div class="box-notification"><span>ATTENTION: Importing the SQL file to your database will overwrite your existing content and website settings. DO NOT import the SQL file if you want to keep the existing content </span></div>
       <div class="box-info alt"><span>NOTE: ALWAYS <a class="white1" href="/help/phpmyadmin-how-to-backup-a-database.html" target="_blank"> backup your database</a> before performing any modifications </span></div>
-      <div class="box-notification alt2"><span>IMPORTANT: the .sql files must be imported in a strict order. First you should upload ZENCART_SHORT.SQL and only after that – ZENCART_FULL.SQL. Other SQL files can be imported in any order </span></div>
-	  <p>To install sample data provided with the template you should open Zen-Cart <b>admin panel > Tools > Install SQL Patches</b></p>
       <figure class="img-polaroid"><img src="img/zc_sql.png" alt=""></figure>
-      <p>You will get 2 options, either execute SQL query or upload .sql file. The result will be the same either option you choose. We’ll stay with the second option as the template includes 4 .sql files.</p>
-  	  <figure class="img-polaroid"><img src="img/zc_sql1.png" alt=""></figure> 
+      <p>You will get 2 options, either execute SQL query or upload .sql file. The result will be the same either option you choose.</p>
+      <figure class="img-polaroid"><img src="img/zc_sql1.png" alt=""></figure> 
       <p>Click on the '<b>Browse</b>' button and navigate to 'sources' folder of the template package, select the .sql file and press the '<b>Upload</b>' button to execute it</p>
       <p>Feel free to check the detailed tutorial on <a href="/help/files/ZenCart/zen_cart_install_sample_data.htm" target="_blank">how to install Zen Cart template sample data</a></p>
       
@@ -384,19 +389,50 @@
 
 <section id="zc_addons">
   <h2><i class="icon-cogs"></i> Zen Cart Add-ons:</h2>
+
+  <div id="megamenu">
+    <h3>Megamenu</h3>
+    <p>Megamenu is custom navigation component that use the standart Navbar markup and consist additional links of your website, such like: Categories, Services, Quick links, Manufacturers, Info, Shipping & Returns. Also you can use description text & carousel elements for Specials, custom banners for Categories, Images for Manufacturers, label text, resizable columns etc. Megamenu includes stickUp menu plugin that makes your navigation sticky at the top of your page when scrolling down the window. Menu compatible with mobile devices and modern web browsers.</p>
+    <figure class="img-polaroid"><img src="img/zc_module_1.png" alt=""></figure>
+    <figure class="img-polaroid"><img src="img/zc_module_1-2.png" alt=""></figure>
+  </div>
+
+  <div id="slider">
+    <h3>Slider</h3>
+    <p>This feature allows to add frontend banners with slideshow effect.</p>
+    <p>You can navigate to <strong>Configuration > ZC Slideshow</strong> to configure the slider:</p>
+    <figure class="img-paraloid"> <img src="img/zc_slider1.png" alt="Slider"></figure>
+    <p>You can add all the required slider effects and select the group of banners that will show up in your slider.</p>
+    <div class="box-info"><span>NOTE: After installation ZENCART_SLIDER.sql or ZENCART_MEGAMENU.sql you need to name the appropriate group into the Banner Manager. For this go to Tools > Banner Manager > new banner > Banner group > and name the field "slider", otherwise your slider does not displayed. The same applies to the Megamenu, but with the name "category_banner".</span></div>
+    <figure class="img-polaroid"><img src="img/zc_banner1.png" alt=""></figure>
+    <figure class="img-polaroid"><img src="img/zc_banner2.png" alt=""></figure>
+  </div>
+
+  <div id="custom_block">
+    <h3>Custom Block</h3>
+    <p>Via Custom block you can display additional content with images & text.</p>
+    <figure class="img-polaroid"><img src="img/zc_module_2.png" alt=""></figure>
+    <p>Custom block consists of three independent units which can be edit at it's sole discretion.</p>
+    <figure class="img-polaroid"><img src="img/zc_module_2-1.png" alt=""></figure>
+  </div>
+
+  <div id="ajax_search">
+     <h3>Ajax Search</h3>
+     <p>This module was added to the template to extend funtionality of the default search. Ajax Search allows you to find the right content and immediately display it without reloading the page under the search field. The results are presented with images, so they look more attractive.</p>
+     <figure class="img-polaroid"><img src="img/zc_module_3.png" alt=""></figure>
+  </div>
+
   <div id="zc_social">
     <h3>Social Media Icons Module</h3>
-
     <p>This module enables the display of social network icons on the product page as well the option of sharing your product info in the social network sites (Goolge Plus, Facebook, Twitter, Pinterest).</p>
-	<p><b>Module Setup:</b> For the Social Media Icons Module setup the installation of <b>ZENCART_SOCIAL.SQL</b> is required. The SQL patch can be imported using the Zen Cart <b>admin panel > Tools > Insall SQL Patches</b> option.</p>
+    <p><b>Module Setup:</b> For the Social Media Icons Module setup the installation of <b>ZENCART_SOCIAL.sql</b> is required. The SQL patch can be imported using the Zen Cart <b>admin panel > Tools > Insall SQL Patches</b> option.</p>
     <p><b>Configuration:</b> To configure the module please go to <b>Configuration > Social Media Icons</b> in Zen Cart admin. All icons are active by default.</p>
     <p>Deactivate all icons - Social Media Buttons - set value to 0 Switch on/off certain icons: choose icon title - set value to 1 or 0 (1 = on, 0 = off).</p>
     <figure class="img-polaroid"><img src="img/zc_social_icons.png" alt=""></figure>
-  </div>  
+  </div>
 
   <div id="footer_links">
     <h3>Footer Links in Columns Module</h3>
-
     <p>The module enables the display of footer links in lines as well as in columns. The number of columns and the position of every item in the column are defined by the order that is set in Admin > Tools > EZ-Pages.</p>
     <p>The first digit in the sort order sets the column number for the link location, the number of columns depends on the quantity of first digits available. The second digit in the sort order defines the link location in the column.</p>
     <div class="box-info"><span>For example:<br>
@@ -417,11 +453,11 @@
     <figure class="img-polaroid"><img src="img/zc_extra_img.png" alt=""></figure>
     <p>Create new product images with the names, that contain the default product image file name.</p>
     <div class="box-info"><span>For example:<br>
-                                Default product image name: <b>01.jpg</b><br>
-                                Additional product image names: <b>01_1.jpg, 01-2.jpg</b> etc<br>
+                                Default product image name: <b>01.png</b><br>
+                                Additional product image names: <b>01_1.png, 01-2.png</b> etc<br>
                                 or<br>
                                 Default product image name: <b>my_product.jpg</b><br>
-                                Additional product image names: <b>my_product _1.jpg, my_product -2.jpg</b> etc
+                                Additional product image names: <b>my_product_1.png, my_product-2.png</b> etc
                                 </span>
      </div>
      <p>Upload the additional images to the directory where the default image is located. Usually the product images are stored in the '<b>images</b>' directory of your Zen Cart installation.</p>
@@ -451,15 +487,14 @@
   </div>
   
   <article>
-                <h2 id="live_chat"><i class="icon-question-sign"></i> Live Chat Olark</h2>
-                <p>To get your data, you can register on Olark website and do all the required steps to get your code.</p>
-                <p>Then, open <strong>includes/templates/themeXXX/common/tpl_main_page.php</strong> file and insert the received code between the lines begin olark code and end olark code and save the file.
-                <div class="box-notification">
-                  <span>Customers who purchased the template are provided with 6 months Olark chat usage for free. To register 6 months Free bronze package you should follow <a target="_blank" href="http://olark.com/signup/create_new_account/18981?utm_source=templatemonster&utm_medium=offer&utm_campaign=default">Olark registration link</a>
-                  </span>
-                </div>
-
-              </article>
+    <h2 id="live_chat"><i class="icon-question-sign"></i> Live Chat Olark</h2>
+      <p>To get your data, you can register on Olark website and do all the required steps to get your code.</p>
+      <p>Then, open <strong>includes/templates/themeXXX/common/tpl_main_page.php</strong> file and insert the received code between the lines begin olark code and end olark code and save the file.
+      <div class="box-notification">
+        <span>Customers who purchased the template are provided with 6 months Olark chat usage for free. To register 6 months Free bronze package you should follow <a target="_blank" href="http://olark.com/signup/create_new_account/18981?utm_source=templatemonster&utm_medium=offer&utm_campaign=default">Olark registration link</a>
+        </span>
+      </div>
+  </article>
 
   <h2><i class="icon-question-sign"></i> Loading data from Google servers</h2>
 
@@ -479,7 +514,7 @@
     <li>Locate the line:
     <pre>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/[---your_jquery_version---]/jquery.min.js">&lt;/script></pre></li>
     <li>Replace with the following:<br>
-    <pre>&lt;script src="//code.jquery.com/jquery-[---your_jquery_version---].min.js">&lt;/script></pre></li></li>
+    <pre>&lt;script src="//code.jquery.com/jquery-[---your_jquery_version---].min.js">&lt;/script></pre></li>
     </ol>
     
     <p>You can also use local copy of jQuery library. </p>
@@ -500,12 +535,11 @@
 	<footer>
 		  <div class="container">        
 		   <div class="span12">
-			<span>Zen Cart Documentation</span><br />
-			&copy; <span id="date"></span> <span id="copyright">Template Monster</span>
+			<span>Zen Cart Documentation</span><br>
+			&copy; <span id="copyright-year"></span> <span id="copyright">Template Monster</span>
 		   </div>
 		  </div>
 	</footer>
-
   <div id="back-top">
     <a href="#"><i class="icon-double-angle-up"></i></a>
   </div>
