@@ -1,0 +1,50 @@
+{
+  "id": "zc_addons",
+  "translations": {
+    "en": "Zen Cart Add-ons:"
+  },
+  "articles": [
+    {
+      "id": "megamenu",
+      "translations": {
+        "en": "Megamenu"
+      }
+    },
+    {
+      "id": "slider",
+      "translations": {
+        "en": "Slider"
+      }
+    },
+    {
+      "id": "custom_block",
+      "translations": {
+        "en": "Custom Block"
+      }
+    },
+    {
+      "id": "ajax_search",
+      "translations": {
+        "en": "Ajax Search"
+      }
+    },
+    {
+      "id": "zc_social",
+      "translations": {
+        "en": "Social Media Icons Module"
+      }
+    },
+    {
+      "id": "footer_links",
+      "translations": {
+        "en": "Footer Links in Columns Module"
+      }
+    },
+    {
+      "id": "zc_extra_img",
+      "translations": {
+        "en": "Zen Cart engine installation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	"id":"zc_template_installation",
+	"translations":
+	{
+		"en":"Template installation"
+	},
+	"articles":
+	[
+	  {
+		"id": "zc_templ_inst",
+		"translations": {
+		  "en": "How to install a Zen Cart Template."
+		}
+	  },
+	  {
+		"id": "zc_sample_data",
+		"translations": {
+		  "en": "How to install Zen Cart sample data "
+		}
+	  }
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "getting_started",
+  "translations": {
+    "en": "Zen Cart engine installation"
+  },
+  "articles": [
+    {
+      "id": "dowloading",
+      "translations": {
+        "en": "Downloading"
+      }
+    },
+    {
+      "id": "extracting",
+      "translations": {
+        "en": "Extracting Files"
+      }
+    },
+    {
+      "id": "uploading_files",
+      "translations": {
+        "en": "Uploading Zen Cart engine files"
+      }
+    },
+    {
+      "id": "zc_engine_install",
+      "translations": {
+        "en": "Zen Cart engine installation"
+      }
+    }
+  ]
+}
