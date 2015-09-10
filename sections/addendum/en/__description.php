@@ -1,11 +1,15 @@
-<h2 class="item8">Live Chat Olark</h2>
+<h2 class="item8"><a href="//special.olark.com/cDqdW">Live Chat Olark</a></h2>
+
 <p>To get your data, you can register on Olark website and do all the required steps to get your code.</p>
+
 <p>Then, open <strong>includes/templates/themeXXX/common/tpl_main_page.php</strong> file and insert the received code
     between the lines 'begin olark code' and 'end olark code' and save the file. To remove Live Chat Olark, simply
-    delete this code from tpl_main_page.php file.
+    delete this code from tpl_main_page.php file.</p>
+
 <p class="alert alert-info">Customers who purchased the template are provided with 6 months Olark chat usage for
-    free. To register 6 months Free bronze package, you should follow <a target="_blank"
-                                                                         href="http://olark.com/signup/create_new_account/18981?utm_source=templatemonster&utm_medium=offer&utm_campaign=default">Olark
+    free. To register 6 months Free bronze package, you should follow
+    <a target="_blank"
+       href="//olark.com/signup/create_new_account/18981?utm_source=templatemonster&utm_medium=offer&utm_campaign=default">Olark
         registration link</a>.</p>
 
 <h4>
