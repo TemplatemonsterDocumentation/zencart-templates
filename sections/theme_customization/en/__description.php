@@ -19,21 +19,3 @@
 <p>To change the site colors, you need to edit the CSS files in the <b>/includes/templates/themeXXX/css/</b>. You can
     learn more about working with the CSS files by <a href="/help/general-tutorials/work-with-css/" target="_blank">checking
         the detailed video tutorials</a>. </p>
-
-<h4>How to increase the number of characters in the banner's title</h4>
-
-<p>By default the number of characters for the banner's title is 64 and if the title exceeds this value the rest of the
-    content is simply not displayed. To change this value go to: phpMyAdmin - Structure > Banners - Structure >
-    banners_title > Change > Length/Values > 512 => Save. For correct display this will be enough.</p>
-
-<figure class="img-polaroid">
-    <img src="img/zc_banner3_1.png" alt="">
-</figure>
-
-<figure class="img-polaroid">
-    <img src="img/zc_banner3_2.png" alt="">
-</figure>
-
-<figure class="img-polaroid">
-    <img src="img/zc_banner3_3.png" alt="">
-</figure>
