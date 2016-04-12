@@ -156,7 +156,7 @@
                         <i class="fa fa-file"></i>
                         ZENCART_YOUTUBE.sql
                     </dt>
-                    <dd> displays YouTube video on the product page</dd>
+                    <dd> display YouTube video on the product page</dd>
                 </dl>
             </li>
         </ul>
