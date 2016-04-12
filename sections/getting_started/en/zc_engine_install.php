@@ -33,7 +33,7 @@
 
 <h4>Database Setup</h4>
 <p>At the Database setup step you need to input your database details. Note that you should have a new database created.
-    Feel free to check the detailed tutorial on <a href="/help/how-create-database.html" target="_blank">how to create a
+    Feel free to check the detailed tutorial on <a href="/help/how-create-a-database.html" target="_blank">how to create a
         database</a>.</p>
 <p>You need to input the database host name, user name, password and database name. All these details can be obtained
     from your hosting control panel or by contacting your hosting provider. </p>
